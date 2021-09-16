@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="box-login">
+        <h2>Inscrivez-vous !</h2>
+        <form>
+            <!--UTILISATEUR-->
+            <div class="form-group">
+                <label for="utilisateur">Nom d'utilisateur</label>
+                <input type="text" id="utilisateur" placeholder="Nom d'utilisateur"
+                maxlength="24">
+                <img src="./ressources/check.svg" alt="icone de validation" class="icon-verif">
+                <span class="message-alerte">Choisissez un pseudo entre 3 et 24 caractères</span>
+            </div>
+
+            <!--MAIL-->
+            <div class="form-group">
+                <label for="email">Entrez votre mail</label>
+                <input type="text" id="email" placeholder="Votre mail">
+                <img src="./ressources/check.svg" alt="icone de validation" class="icon-verif">
+                <span class="message-alerte">Rentrez un email valide.</span>
+            </div>
+
+            <!--MOT DE PASSE -->
+            <div class="form-group">
+                <label for="mdp">Mot de passe</label>
+                <input type="password" id="mdp" placeholder="Mot de passe">
+                <img src="./ressources/check.svg" alt="icone de validation" class="icon-verif">
+                <span class="message-alerte">Un symbole, une lettre minuscule, un chiffre.</span>
+                <div class="ligne">
+                    <div class="l1"><span>faible</span></div>
+                    <div class="l2"><span>moyen</span></div>
+                    <div class="l3"><span>fort</span></div>
+                </div>
+            </div>
+
+            <!-- CONFIRMATION DE MDP -->
+            <div class="form-group">
+                <label for="mdpConf">Confirmer le mot de passe</label>
+                <input type="password" id="mdpConf" placeholder="Confirmez">
+                <img src="./ressources/check.svg" alt="icone de validation" class="icon-verif">
+            </div>
+
+            <button type="submit">Création du compte</button>
+        </form>
+    </div>
 
     <script src="app.js"></script>
 </body>
